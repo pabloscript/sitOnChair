@@ -140,3 +140,26 @@ html {
     visibility: visible;
     top: 55px;
 }
+
+
+/* Main content */
+
+.slider-bg {}
+
+.main-slider {
+    position: relative;
+}
+
+.main-slider-prev {
+    position: absolute;
+}
+
+.main-slider-next {
+    position: absolute;
+}
+
+.main-slider-slides-cnt {
+    position: relative;
+}
+
+.slide {}
