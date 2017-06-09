@@ -154,6 +154,7 @@ html {
 
 .main-slider {
     position: relative;
+    height:500px;
 }
 
 .main-slider-prev {
@@ -164,9 +165,8 @@ html {
     font-size: 60px;
     font-weight: 300;
     position: absolute;
-    top: 50%;
+    top: 0;
     left: 0;
-    right: 0;
     bottom: 0;
     margin: auto;
 }
@@ -179,8 +179,7 @@ html {
     font-size: 60px;
     font-weight: 300;
     position: absolute;
-    top: 50%;
-    left: 0;
+    top: 0;
     right: 0;
     bottom: 0;
     margin: auto;
@@ -188,9 +187,12 @@ html {
 
 .main-slider-slides-cnt {
     position: relative;
+    height:100%;
+    margin:0 60px;
 }
 
 .main-slider-slide {
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -199,42 +201,32 @@ html {
 }
 
 .main-slider-slide-img {
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-}
-
-.main-slider-text {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    transform:translate(0,-50%);
+    margin: 0 auto;
 }
 
-.btn {
+.main-slider-slide-text {
+    position: absolute;
+    width:50%;
+    right: 0;
+    top:50%;
+    transform:translate(0,-50%);
+}
+
+.main-slider-slide-text .btn {
     display: inline-block;
     color: #fff;
-    width: 150px;
-    height: 80px;
     background-color: rgba(0, 200, 170, 1);
     text-align: center;
     text-transform: uppercase;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
+    margin: 0 auto;
+    text-decoration: none;
+    padding:10px 30px;
 }
 
-.btn a {
-    text-decoration: none;
-    vertical-align: middle;
-}
 
 h2 {
     text-transform: uppercase;
