@@ -1,0 +1,102 @@
+.slider-bg {
+    width: 100%;
+    background: rgba(237,234,237,1);
+    background: -webkit-linear-gradient(rgba(237,234,237,1) 0%, rgba(204,200,204,1) 61%, rgba(174,174,181,1) 100%);
+    background: -o-linear-gradient(rgba(237,234,237,1) 0%, rgba(204,200,204,1) 61%, rgba(174,174,181,1) 100%);
+    background: linear-gradient(rgba(237,234,237,1) 0%, rgba(204,200,204,1) 61%, rgba(174,174,181,1) 100%);
+}
+
+.main-slider {
+    position: relative;
+    height:500px;
+}
+
+.main-slider-prev {
+    border: none;
+    background: none;
+    color: rgba(0, 200, 170, 1);
+    position: absolute;
+    font-size: 60px;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.main-slider-next {
+    border: none;
+    background: none;
+    color: rgba(0, 200, 170, 1);
+    position: absolute;
+    font-size: 60px;
+    font-weight: 300;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.main-slider-slides-cnt {
+    position: relative;
+    height:100%;
+    margin:0 60px;
+}
+
+.main-slider-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.main-slider-slide-img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform:translate(0,-50%);
+    margin: 0 auto;
+}
+
+.main-slider-slide-text {
+    position: absolute;
+    text-align: center;
+    width:50%;
+    right: 0;
+    top:50%;
+    transform:translate(-10%,-50%);
+}
+
+.main-slider-slide-text h2 {
+    padding-bottom: 20px;
+}
+
+.main-slider-slide-text div {
+    padding-bottom: 30px;
+}
+
+.main-slider-slide-text .btn {
+    display: inline-block;
+    color: #fff;
+    background-color: rgba(0, 200, 170, 1);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 auto;
+    text-decoration: none;
+    padding:10px 30px;
+}
+
+
+h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+h2 span {
+    font-weight: 600;
+    color: rgba(0, 200, 170, 1);
+}

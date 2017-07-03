@@ -1,0 +1,29 @@
+/* SECTION 1 - OFFER */
+
+.offer-box {
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.chairs {
+
+    h4 {
+        border-bottom: 6px solid rgba(0, 200, 170, 1);
+    }
+    span {
+        text-transform: uppercase;
+    }
+}
+
+.clair {
+    background: url("../img/box1_img.jpg") no-repeat;
+    background-size: contain;
+}
+
+.margarita {
+    background: url("../img/box2_img.jpg") no-repeat;
+    background-size: contain;
+}
+
+/* SECTION 1 - PRICING */
