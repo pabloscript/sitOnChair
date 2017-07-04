@@ -1,0 +1,23 @@
+/* FOOTER */
+
+.footer {
+    color: dimgray;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+
+    .copyright-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .copyright {
+            font-size: 1.6rem;
+
+        }
+
+        .brand-end {
+            font-size: 2rem;
+            text-transform: uppercase;
+        }
+    }
+}
