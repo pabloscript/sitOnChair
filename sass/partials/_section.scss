@@ -74,7 +74,7 @@
     font-size: 2.2rem;
     line-height: 3rem;
     font-weight: 500;
-    margin: 3rem 0 4rem 0;
+    margin: 3rem 0 7rem 0;
 }
 
 // niezaznaczone boxy
@@ -84,6 +84,32 @@
     background: #f9f9f9;
     color: #c2c2c2;
     text-align: center;
+
+    &::before {
+        position: absolute;
+        top: -17%;
+        left: 28%;
+        content: "";
+        background: #fff;
+        width: 55px;
+        height: 55px;
+        border: 2px solid #c2c2c2;
+        border-radius: 50%;
+        transform: translate(50px, 50px);
+    }
+
+    &::after {
+        position: absolute;
+        top: -14%;
+        left: 32%;
+        content: "";
+        background: #c2c2c2;
+        width: 25px;
+        height: 25px;
+        border: 2px solid #c2c2c2;
+        border-radius: 50%;
+        transform: translate(50px, 50px);
+    }
 
     h3 {
         font-size: 2.6rem;
@@ -159,6 +185,32 @@
     background: $main-color;
     color: #c2c2c2;
     text-align: center;
+
+    &::before {
+        position: absolute;
+        top: -17%;
+        left: 28%;
+        content: "";
+        background: $main-color;
+        width: 55px;
+        height: 55px;
+        border: 2px solid $main-color;
+        border-radius: 50%;
+        transform: translate(50px, 50px);
+    }
+
+    &::after {
+        position: absolute;
+        top: -14%;
+        left: 32%;
+        content: "";
+        background: #fff;
+        width: 25px;
+        height: 25px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        transform: translate(50px, 50px);
+    }
 
     h3 {
         font-size: 2.6rem;
