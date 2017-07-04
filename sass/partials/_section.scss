@@ -1,29 +1,295 @@
 /* SECTION 1 - OFFER */
 
 .offer-box {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 15px;
+    height: 350px;
+    .row div:last-child {
+        border: 1px solid #c2c2c2;
+    }
 }
 
 .chairs {
+    position: relative;
 
-    h4 {
-        border-bottom: 6px solid rgba(0, 200, 170, 1);
+    .chairs-inner {
+        position: absolute;
+        background: rgba(255, 255, 255, .4);
+        padding-left: 5%;
+        bottom: 25%;
+        width: 100%;
+
+        h3 {
+            width: 40%;
+            border-bottom: 6px solid $main-color;
+            font-size: 1.6rem;
+            line-height: 1.5rem;
+            font-weight: bold;
+            margin: 10px;
+
+            span {
+                text-transform: uppercase;
+            }
+        }
     }
-    span {
+
+    img {
+        border: 1px solid #c2c2c2;
+        width: 100%;
+        height: auto;
+    }
+
+    .article {
+        position: static;
+        background: none;
+        padding-left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    p {
+        font-size: 1.4rem;
+        font-weight: normal;
+        color: dimgray;
+        padding: 10px 0 0 10px;
+    }
+}
+
+/* SECTION 2 - PRICING */
+
+.pricing {
+    background: #f1f1f1;
+    .container .row:last-child {
+        padding-bottom: 4rem;
+    }
+}
+
+.section-title {
+    border-bottom: 6px solid $main-color;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    font-weight: 500;
+    margin: 3rem 0 4rem 0;
+}
+
+// niezaznaczone boxy
+.plans-choice {
+    border: 2px solid #c2c2c2;
+    padding: 10px;
+    background: #f9f9f9;
+    color: #c2c2c2;
+    text-align: center;
+
+    h3 {
+        font-size: 2.6rem;
+        color: $main-color;
         text-transform: uppercase;
+        padding: 10px 0 10px 0;
+    }
+
+    div {
+        display: inline-block;
+        padding-top: 30px;
+        background: #fff;
+        font-size: 4.5rem;
+        font-weight: bold;
+        line-height: 3rem;
+        height: 130px;
+        width: 130px;
+        border: 2px solid #c2c2c2;
+        border-radius: 50%;
+        sup, span {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+        sup {
+            top: -1.5em;
+        }
+    }
+
+    button {
+        display: inline-block;
+        color: #fff;
+        font-size: 1.6rem;
+        background-color: $main-color;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-decoration: none;
+        padding:10px 30px;
+        border: none;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+
+}
+
+.list-group {
+    margin: 10px -10px 10px -10px;
+    height: 250px;
+    font-size: 2.4rem;
+
+    li {
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+
+    li:nth-child(2n) {
+        background: #e4e4e4;
+    }
+
+    li:nth-child(2n-1) {
+        background: #f1f1f1;
+    }
+
+}
+
+// zaznaczony box
+
+.chosen {
+    border: 2px solid $main-color;
+    padding: 10px;
+    background: $main-color;
+    color: #c2c2c2;
+    text-align: center;
+
+    h3 {
+        font-size: 2.6rem;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 10px 0 10px 0;
+    }
+
+    div {
+        display: inline-block;
+        padding-top: 30px;
+        background: #fff;
+        font-size: 4.5rem;
+        font-weight: bold;
+        line-height: 3rem;
+        height: 130px;
+        width: 130px;
+        border: 2px solid $main-color;
+        border-radius: 50%;
+        sup, span {
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            font-weight: normal;
+        }
+        sup {
+            top: -1.5em;
+        }
+    }
+
+    .list-group {
+
+        li:nth-child(2n) {
+            background-color: #e4e4e4;
+        }
+
+        li:nth-child(2n-1) {
+            background: #f1f1f1;
+        }
+
+    }
+
+    button {
+        display: inline-block;
+        color: $main-color;
+        font-size: 1.6rem;
+        background-color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-decoration: none;
+        padding: 10px 30px;
+        border: none;
+        border-radius: 15px;
+        margin-bottom: 10px;
     }
 }
 
-.clair {
-    background: url("../img/box1_img.jpg") no-repeat;
-    background-size: contain;
+/* SECTION 3 - CONTACT */
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    input {
+        width: 100%;
+        font-size: 3.3rem;
+        color: #c2c2c2;
+        border: 1px solid $main-color;
+        margin-bottom: 1.5rem;
+        padding: 1rem;
+
+        &::placeholder {
+            color: #c2c2c2;
+            font-family: "Raleway", sans-serif;
+            padding: 1rem;
+        }
+
+        &:last-child {
+            height: 21rem;
+        }
+    }
 }
 
-.margarita {
-    background: url("../img/box2_img.jpg") no-repeat;
-    background-size: contain;
-}
+.form-submit {
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
-/* SECTION 1 - PRICING */
+    img {
+        margin-bottom: 1rem;
+    }
+
+    .statement {
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        margin-bottom: 1rem;
+        color: #c2c2c2;
+        align-items: center;
+        justify-content: space-around;
+
+        .statement-check {
+            border: 0.5px solid $main-color;
+            margin-right: 1rem;
+
+            img {
+                padding: 0.5rem;
+            }
+        }
+        .statement-text {
+            font-size: 2rem;
+        }
+    }
+
+    .submit-btn {
+        display: inline-block;
+        width: 100%;
+        color: #fff;
+        font-size: 3.4rem;
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        background-color: $main-color;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 0 auto;
+        text-decoration: none;
+        padding:10px 30px;
+        border: none;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+}

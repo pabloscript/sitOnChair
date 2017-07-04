@@ -15,13 +15,10 @@
         <div class="wrap-all">
 
             <header class="page-header">
-
                 <div class="container">
-
                     <a href="" class="page-logo">
                         Sit <span>on</span> chair
                     </a>
-
                     <nav class="page-nav">
                         <ul class="page-nav-list">
                             <li>
@@ -36,19 +33,14 @@
                             <li><a href="">Kontakt</a></li>
                         </ul>
                     </nav>
-
                 </div>
             </header><!-- e: page header -->
 
             <div class="slider-bg">
-
                 <div class="container">
-
                     <div class="main-slider">
                         <button class="main-slider-prev">&#60;</button>
                         <div class="main-slider-slides-cnt">
-
-
                             <div class="main-slider-slide">
                                 <img src="img/black_chair.png" alt="black chair" class="main-slider-slide-img">
                                 <div class="main-slider-slide-text">
@@ -61,8 +53,6 @@
                                     <a href="" class="btn">Zobacz więcej</a>
                                 </div>
                             </div><!-- e: pojedynczy slajd -->
-
-
                         </div><!-- e: main-slider-slides-cnt -->
                         <button class="main-slider-next">&#62;</button>
                     </div>
@@ -70,61 +60,116 @@
             </div><!-- e: main slider -->
 
             <section class="offer">
-
                 <div class="container offer-box">
                     <div class="row">
-                        <div class="chairs clair col-lg-4">
-
-                            <h4>Chair <span>Clair</span></h4>
-                        </div>
-                        <div class="chairs margarita col-lg-4">
-
-                            <h4>Chair <span>Margarita</span></h4>
+                        <div class="chairs col-lg-4">
+                            <div class="chairs-inner">
+                                <h3>Chair <span>Clair</span></h3>
+                            </div>
+                            <img src="img/box1_img.jpg" alt="">
                         </div>
                         <div class="chairs col-lg-4">
-                            <h4>Finds all inputs</h4>
+                            <div class="chairs-inner">
+                                <h3>Chair <span>Margarita</span></h3>
+                            </div>
+                            <img src="img/box2_img.jpg" alt="">
+                        </div>
+                        <div class="chairs col-lg-4">
+                            <div class="chairs-inner article">
+                                <h3>Finds all inputs</h3>
+                            </div>
                             <p>
                                 Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.
                             </p>
                             <p>
                                 Notice there is no change when clicking the checkboxes since no click events have been linked.
                             </p>
+
                         </div>
                     </div>
-
                 </div><!-- e: container of offer -->
-
             </section><!-- e: section offer -->
 
             <section class="pricing">
-
                 <div class="container">
                     <div class="row">
-                        <h3 class="col-lg-4">Cennik</h3>
+                        <div class="col-lg-4">
+                            <h3 class="section-title">Cennik</h3>
+                        </div>
                     </div>
-
                     <div class="row">
                         <div class="plans col-lg-4">
-                            Basic plan
+                            <div class="plans-choice">
+                                <h3 data-price="85.99">Basic plan</h3>
+                                <div>85<sup>99</sup><br><span>pln&#47;msc</span></div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Zakup towaru &#43; dowóz</li>
+                                    <li class="list-group-item">Serwis</li>
+                                </ul>
+                                <button type="button" name="button">Dołącz</button>
+                            </div>
                         </div>
                         <div class="plans col-lg-4">
-                            Standard plan
+                            <div class="plans-choice chosen">
+                                <h3 data-price="95.99">Standard plan</h3>
+                                <div>95<sup>99</sup><br><span>pln&#47;msc</span></div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Zakup towaru &#43; dowóz</li>
+                                    <li class="list-group-item">Serwis</li>
+                                    <li class="list-group-item">Gwarancja 5 lat</li>
+                                </ul>
+                                <button type="button" name="button">Dołącz</button>
+                            </div>
                         </div>
                         <div class="plans col-lg-4">
-                            Advanced plan
+                            <div class="plans-choice">
+                                <h3 data-price="211.00">Advanced plan</h3>
+                                <div>211<sup>00</sup><br><span>pln&#47;msc</span></div>
+                                <ul class="list-group">
+                                    <li class="list-group-item">Zakup towaru &#43; dowóz</li>
+                                    <li class="list-group-item">Serwis</li>
+                                    <li class="list-group-item">Gwarancja 6 lat</li>
+                                    <li class="list-group-item">Porady projektanta</li>
+                                </ul>
+                                <button type="button" name="button">Dołącz</button>
+                            </div>
                         </div>
                     </div>
-
                 </div><!-- e: container of prices -->
-
             </section><!-- e: section prices -->
 
             <section class="contact">
                 <div class="container">
-
+                    <div class="row">
+                        <div class="abcd col-lg-4">
+                            <h3 class="section-title">Kontakt</h3>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <form class="contact-form">
+                                <input type="text" name="name" value="" placeholder="Imię">
+                                <input type="email" name="email" value="" placeholder="Email">
+                                <input type="textarea" name="message" value=""  placeholder="Wiadomość">
+                            </form>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="form-submit">
+                                <img src="img/red_chair.png" alt="Red chair">
+                                <div class="statement">
+                                    <div class="statement-check">
+                                        <img src="img/form_ok.jpg" alt="checkbox">
+                                    </div>
+                                    <div class="statement-text">
+                                        Zgadzam się na przetwarzanie danych osobowych
+                                    </div>
+                                </div>
+                                <input class="submit-btn" type="submit" value="Wyślij">
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
-
             </section><!-- e: section contact -->
 
             <footer>

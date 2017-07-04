@@ -1,20 +1,24 @@
 .slider-bg {
     width: 100%;
-    background: rgba(237,234,237,1);
-    background: -webkit-linear-gradient(rgba(237,234,237,1) 0%, rgba(204,200,204,1) 61%, rgba(174,174,181,1) 100%);
-    background: -o-linear-gradient(rgba(237,234,237,1) 0%, rgba(204,200,204,1) 61%, rgba(174,174,181,1) 100%);
-    background: linear-gradient(rgba(237,234,237,1) 0%, rgba(204,200,204,1) 61%, rgba(174,174,181,1) 100%);
+    background: rgba(232,233,235,1);
+    background: -moz-linear-gradient(top, rgba(232,233,235,1) 0%, rgba(246,246,246,1) 47%, rgba(166,170,179,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(232,233,235,1)), color-stop(47%, rgba(246,246,246,1)), color-stop(100%, rgba(166,170,179,1)));
+    background: -webkit-linear-gradient(top, rgba(232,233,235,1) 0%, rgba(246,246,246,1) 47%, rgba(166,170,179,1) 100%);
+    background: -o-linear-gradient(top, rgba(232,233,235,1) 0%, rgba(246,246,246,1) 47%, rgba(166,170,179,1) 100%);
+    background: -ms-linear-gradient(top, rgba(232,233,235,1) 0%, rgba(246,246,246,1) 47%, rgba(166,170,179,1) 100%);
+    background: linear-gradient(to bottom, rgba(232,233,235,1) 0%, rgba(246,246,246,1) 47%, rgba(166,170,179,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e8e9eb', endColorstr='#a6aab3', GradientType=0 );
 }
 
 .main-slider {
     position: relative;
-    height:500px;
+    height:450px;
 }
 
 .main-slider-prev {
     border: none;
     background: none;
-    color: rgba(0, 200, 170, 1);
+    color: $main-color;
     position: absolute;
     font-size: 60px;
     font-weight: 300;
@@ -28,7 +32,7 @@
 .main-slider-next {
     border: none;
     background: none;
-    color: rgba(0, 200, 170, 1);
+    color: $main-color;
     position: absolute;
     font-size: 60px;
     font-weight: 300;
@@ -77,12 +81,14 @@
 
 .main-slider-slide-text div {
     padding-bottom: 30px;
+    font-size: 1.4rem;
 }
 
 .main-slider-slide-text .btn {
     display: inline-block;
     color: #fff;
-    background-color: rgba(0, 200, 170, 1);
+    font-size: 2.4rem;
+    background-color: $main-color;
     text-align: center;
     text-transform: uppercase;
     margin: 0 auto;
@@ -98,5 +104,5 @@ h2 {
 
 h2 span {
     font-weight: 600;
-    color: rgba(0, 200, 170, 1);
+    color: $main-color;
 }

@@ -32,11 +32,13 @@
 }
 html {
     color: #222;
-    font-size: 1em;
+    font-size: 10px;
     line-height: 1.4;
 
 }
 
 .container {
-    max-width: 1060px;
+    max-width: 1100px;
 }
+
+$main-color: rgba(0, 200, 170, 1);
