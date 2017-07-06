@@ -1,5 +1,17 @@
 document.addEventListener("DOMContentLoaded", function(event) {
 
+    // Wysuwane menu:
+    var about = document.querySelector(".page-nav li");
+    console.log(about);
+    var subList = document.querySelector(".page-nav-sublist");
+    console.log(subList);
+
+    function extendMenu() {
+        subList.classList.toggle("extend");
+    }
+    about.addEventListener("mouseover", extendMenu);
+    about.addEventListener("mouseout", extendMenu);
+
     // Slider
     var buttonNext = document.querySelector(".main-slider-prev");
     console.log(buttonNext);
@@ -46,15 +58,36 @@ document.addEventListener("DOMContentLoaded", function(event) {
     checkbox.addEventListener("click", ok);
 
     // Obrazki - znikające nazwy krzeseł:
-    var chairs = document.querySelectorAll(".chairs");
-    console.log(chairs);
-    var chairName = document.querySelectorAll(".chairs-inner");
-    console.log(chairName);
+    // (pewnie da się to zrobić w pętli, ale mi nie wychodziło)
+    var clair = document.querySelectorAll(".chairs")[0];
+    console.log(clair);
+    var margarita = document.querySelectorAll(".chairs")[1];
+    console.log(margarita);
+    var clairText = clair.children[0];
+    console.log(clairText);
+    var margaritaText = margarita.children[0];
+    console.log(margaritaText);
 
-    for (var i = 0; i < chairs.length; i++) {
-        function hoverOverChair() {
-            chairName[i].style.display = "none";
-        }
+        // Clair:
+    function hoverOverClair() {
+        clairText.style.display = "none";
     }
-    chairs[i].addEventListener("mouseover", hoverOverChair);
+    clair.addEventListener("mouseover", hoverOverClair);
+
+    function leaveClair() {
+        clairText.style.display = "inline-block";
+    }
+    clair.addEventListener("mouseout", leaveClair);
+
+        // Margarita:
+    function hoverOverMargarita() {
+        margaritaText.style.display = "none";
+    }
+    margarita.addEventListener("mouseover", hoverOverMargarita);
+
+    function leaveMargarita() {
+        margaritaText.style.display = "inline-block";
+    }
+    margarita.addEventListener("mouseout", leaveMargarita);
+
 });

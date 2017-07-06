@@ -36,6 +36,10 @@
         }
     }
 
+    .hide {
+        display: none;
+    }
+
     img {
         border: 1px solid #c2c2c2;
         width: 100%;
@@ -354,18 +358,17 @@
         justify-content: space-around;
 
         .statement-check {
-            width: 8rem;
-            height: 6rem;
+            width: 6.5rem;
             border: 0.5px solid $main-color;
             margin-right: 1rem;
 
             img {
                 padding-top: 0.7rem;
-                display: none;
+                visibility: hidden;
             }
 
             .show {
-                display: inline-block;
+                visibility: visible;
             }
         }
 

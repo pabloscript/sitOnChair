@@ -53,45 +53,56 @@
             }
         }
 
-    // Kod do poprawy na Sass:
-
         .page-nav-sublist {
             position: absolute;
             top: 45px;
             left: -10px;
             background: #000;
             width: 150px;
-            padding: 10px 0;
+            padding: 0;
             visibility: hidden;
             opacity: 0;
             transition: 0.5s opacity, 0.5s top;
+            z-index: 999;
+
+            &::before {
+                content: '';
+                width: 0;
+                height: 0;
+                border: 10px solid transparent;
+                border-bottom-color: #000;
+                position: absolute;
+                left: 36%;
+                top: -20px;
+            }
+
+            li {
+                display: block;
+                text-align: left;
+            }
+
+            li:hover a {
+                background: #fff;
+                color: black;
+            }
+
+            li a {
+                text-transform: none;
+                font-weight: normal;
+            }
         }
 
-        .page-nav-sublist::before {
-            content: '';
-            width: 0;
-            height: 0;
-            border: 10px solid transparent;
-            border-bottom-color: #000;
-            position: absolute;
-            left: 36%;
-            top: -20px;
-        }
-
-        .page-nav-sublist li {
-            display: block;
-            text-align: left;
-        }
-
-        .page-nav-sublist li a {
-            text-transform: none;
-            font-weight: normal;
-        }
-
-        .page-nav li:hover .page-nav-sublist {
+        .extend {
             opacity: 1;
             visibility: visible;
             top: 55px;
         }
     }
 }
+
+
+// .page-nav li:hover .page-nav-sublist {
+//     opacity: 1;
+//     visibility: visible;
+//     top: 55px;
+// }
