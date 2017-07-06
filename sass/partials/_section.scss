@@ -141,19 +141,40 @@
 
     button {
         display: inline-block;
-        color: #fff;
-        font-size: 1.6rem;
         background-color: $main-color;
         text-align: center;
         text-transform: uppercase;
         margin: 0 auto;
-        text-decoration: none;
-        padding:10px 30px;
+        padding: 10px 30px;
         border: none;
         border-radius: 15px;
         margin-bottom: 10px;
+        border: 1px solid $main-color;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.6rem;
+            border-radius: 15px;
+        }
+
+        &:hover {
+            background: #fff;
+            border: 1px solid $main-color;
+
+            a {
+                color: $main-color;
+            }
+        }
+
     }
 
+}
+
+.plans-choice:hover {
+    transform: scale(1.02);
+    transition: 0.1s linear;
 }
 
 .list-group {
@@ -265,6 +286,24 @@
         border: none;
         border-radius: 15px;
         margin-bottom: 10px;
+        border: 1px solid #fff;
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: $main-color;
+            font-size: 1.6rem;
+            border-radius: 15px;
+        }
+
+        &:hover {
+            background: $main-color;
+            border: 1px solid #fff;
+
+            a {
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -315,13 +354,21 @@
         justify-content: space-around;
 
         .statement-check {
+            width: 8rem;
+            height: 6rem;
             border: 0.5px solid $main-color;
             margin-right: 1rem;
 
             img {
-                padding: 0.5rem;
+                padding-top: 0.7rem;
+                display: none;
+            }
+
+            .show {
+                display: inline-block;
             }
         }
+
         .statement-text {
             font-size: 2rem;
         }
