@@ -58,36 +58,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
     checkbox.addEventListener("click", ok);
 
     // Obrazki - znikające nazwy krzeseł:
-    // (pewnie da się to zrobić w pętli, ale mi nie wychodziło)
-    var clair = document.querySelectorAll(".chairs")[0];
-    console.log(clair);
-    var margarita = document.querySelectorAll(".chairs")[1];
-    console.log(margarita);
-    var clairText = clair.children[0];
-    console.log(clairText);
-    var margaritaText = margarita.children[0];
-    console.log(margaritaText);
 
-        // Clair:
-    function hoverOverClair() {
-        clairText.style.display = "none";
+    var chairs = document.querySelectorAll(".chairs");
+    console.log(chairs);
+
+    for (var i = 0; i < chairs.length-1; i++) {
+        function hoverOverChair() {
+            this.children[0].style.display = "none";
+        }
+        chairs[i].addEventListener("mouseover", hoverOverChair);
+
+        function leaveChair() {
+            this.children[0].style.display = "inline-block";
+        }
+        chairs[i].addEventListener("mouseout", leaveChair);
     }
-    clair.addEventListener("mouseover", hoverOverClair);
-
-    function leaveClair() {
-        clairText.style.display = "inline-block";
-    }
-    clair.addEventListener("mouseout", leaveClair);
-
-        // Margarita:
-    function hoverOverMargarita() {
-        margaritaText.style.display = "none";
-    }
-    margarita.addEventListener("mouseover", hoverOverMargarita);
-
-    function leaveMargarita() {
-        margaritaText.style.display = "inline-block";
-    }
-    margarita.addEventListener("mouseout", leaveMargarita);
-
 });
