@@ -2,16 +2,17 @@
 
 ===============
 
-Projekt zawiera kod z warsztatów z ciêcia strony "sit on chair"
+This repo includes the code of the PSD-to-website exercise at Coders Labs JavaScript Dev (React) bootcamp.
 
-Struktura katalogów:
-1. -css (kod CSS skompilowany z Sass)
-2. -img (grafiki)
-3. -js (kod JavaScript)
-4. -sass (pliki .scss)
-5. gulpfile.js (plik konfiguracyjny Gulp)
+Important comment: the website is not responsive, the exercise didn't include it. RWD topic came up later throught the course.
+
+Directories structure:
+1. -css (CSS code compiled from Sass)
+2. -img (images)
+3. -js (JavaScript code)
+4. -sass (.scss files)
+5. gulpfile.js (Gulp config file)
 6. index.html
 
-
-Autor:
-Pawe³
+Author:
+Pawel Kozicki
